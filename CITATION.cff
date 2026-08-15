@@ -10,4 +10,12 @@ authors:
 repository-code: https://github.com/sENZ5hFx/knowledge-gap-frontier-2026
 url: https://github.com/sENZ5hFx/knowledge-gap-frontier-2026
 date-released: 2026-07-31
-abstract: Session output: prioritized scientific knowledge gaps across domains - autonomous research log July 2026
+version: 0.1.0
+license: SEE_LICENSE_FILE
+keywords:
+  - knowledge gaps
+  - scientific research
+  - research prioritization
+  - autonomous research
+  - cross-domain analysis
+abstract: 'A repository containing a prioritized collection of scientific knowledge gaps across domains.'
