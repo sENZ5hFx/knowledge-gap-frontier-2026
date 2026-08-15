@@ -1,0 +1,40 @@
+name: Generate Zenodo metadata
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'CITATION.cff'
+      - '.github/workflows/zenodo-metadata.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  zenodo:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install cffconvert
+        run: pip install cffconvert
+      - name: Validate citation metadata
+        run: |
+          test -f CITATION.cff || { echo 'CITATION.cff missing'; exit 1; }
+          cffconvert --validate -i CITATION.cff
+      - name: Generate .zenodo.json
+        run: cffconvert -f zenodo -i CITATION.cff -o .zenodo.json
+      - name: Commit generated metadata
+        run: |
+          if git diff --quiet -- .zenodo.json; then
+            echo 'No metadata changes'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add .zenodo.json
+          git commit -m 'Update Zenodo metadata from CITATION.cff'
+          git push
