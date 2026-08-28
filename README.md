@@ -1,18 +1,9 @@
-# knowledge-gap-frontier-2026
+# Historical public research record — disclosure review
 
-Prioritized cross-domain knowledge-gap research log — July 2026.
+This repository contains an AI-assisted research-session record that was previously made public.
 
-## Scope
+The current default branch has been intentionally minimized while disclosure and protection strategy are reviewed. Detailed material from earlier public commits remains part of the historical public record; this change does **not** undo or retract prior disclosure.
 
-This repository preserves an autonomous/AI-assisted research session that ranked **candidate** knowledge gaps for further investigation.
+No current statement here should be treated as proof of novelty, scientific validation, peer review, patentability, filing status, patent-pending status, or legal priority.
 
-## Evidence boundary
-
-- Priority rankings are internal research judgments, not external scientific consensus.
-- A candidate knowledge gap may later prove well-covered, differently framed, or unsupported when checked against broader literature.
-- Any factual or novelty claim should be verified against primary sources and current research.
-- Git timestamps preserve chronology only and do not constitute peer review, experimental validation, patent filings, or legal-priority determinations.
-
-## Intended use
-
-Use as a research queue and provenance record for later source-bound investigation.
+Historical commits are preserved for provenance and future review. No additional detailed research or enabling mechanics should be added to the public branch without an explicit disclosure decision.
