@@ -1,0 +1,26 @@
+{
+  "index_definition": "IDI = U * E * L * M * N; attention is reported only when counted and is NOT inside IDI",
+  "ranked": [
+    {"gap_id": "boreal_abrupt_thaw_attention", "IDI": 0.4095, "attention_deficit_counted": 0.906, "confidence": "author_essay"},
+    {"gap_id": "deep_pelagic_decline_cause", "IDI": 0.405, "attention_deficit_counted": null, "confidence": "primary_page", "erasure": "already"},
+    {"gap_id": "human_gut_virome", "IDI": 0.2349},
+    {"gap_id": "ecm_fungi_dark_taxa", "IDI": 0.1867},
+    {"gap_id": "subpolar_gyre_dynamics", "IDI": 0.1856, "attention_deficit_counted": 0.562},
+    {"gap_id": "insect_dark_taxa_rate", "IDI": 0.162},
+    {"gap_id": "dark_oxygen_dispute", "IDI": 0.0367},
+    {"gap_id": "seafloor_bathymetry", "IDI": 0.0258},
+    {"gap_id": "kuiper_small_body_deficit", "IDI": 0.0221},
+    {"gap_id": "greenland_attention_baseline", "IDI": 0.0105, "attention_deficit_counted": 0.0},
+    {"gap_id": "early_black_hole_seeds", "IDI": 0.0052},
+    {"gap_id": "dark_matter_identity", "IDI": 0.0044}
+  ],
+  "sensitivity": "If boreal E is cut from 0.75 to 0.45, boreal IDI falls to 0.246 and pelagic cause becomes first. Attention deficits do not move.",
+  "clocks": {
+    "gulf_deep_pelagic_cause": "erasure_already_preceded_identity",
+    "insects_global_description_backlog": "undetermined",
+    "dark_matter": "undetermined"
+  },
+  "conflation_audit_any_discovery_claimed": false,
+  "session_id": "2026-10-24T1740-EDT-erasure-before-identity",
+  "timestamp": "2026-10-24T17:40:00-04:00"
+}
